@@ -18,8 +18,9 @@ function Nav() {
           </Link>
           <nav className="layout-nav" aria-label="Navegação principal">
             <NavLink to="/" end>Início</NavLink>
+            <NavLink to="/sobre">A faculdade</NavLink>
             <NavLink to="/cursos">Cursos</NavLink>
-            <NavLink to="/ingresso">Ingresso</NavLink>
+            <NavLink to="/noticias">Notícias</NavLink>
             <NavLink to="/contato">Contato</NavLink>
           </nav>
           <Link className="layout-cta" to="/ingresso">Quero estudar <span aria-hidden="true">→</span></Link>
