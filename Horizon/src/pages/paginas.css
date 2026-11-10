@@ -1,0 +1,119 @@
+.home-highlight {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 5px 70px 5px 5px;
+  background: #e9d8c6;
+}
+
+.highlight-number {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.highlight-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 178px;
+  height: 178px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f2b77f;
+  color: var(--green);
+  font-size: 105px;
+  transform: translate(-50%, -57%);
+}
+
+.home-highlight > p {
+  position: relative;
+  max-width: 220px;
+  color: var(--dark-green);
+  font: 600 16px/1.5 'Manrope', sans-serif;
+}
+
+.home-invitation,
+.about-values {
+  padding: 65px 0;
+  background: var(--paper);
+}
+
+.invitation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.invitation-content h2,
+.about-values h2 {
+  max-width: 500px;
+  margin: 10px 0 0;
+  color: var(--dark-green);
+  font: 700 29px/1.25 'Manrope', sans-serif;
+  letter-spacing: -1px;
+}
+
+.about-content {
+  max-width: 1120px;
+  padding-block: 74px 82px;
+}
+
+.about-content h1 {
+  margin: 16px 0 13px;
+  color: var(--dark-green);
+  font: 700 46px/1.12 'Manrope', sans-serif;
+  letter-spacing: -2.4px;
+}
+
+.about-content h1 em { color: var(--orange); font-weight: 500; }
+
+.about-content > p {
+  max-width: 540px;
+  color: #727d76;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.about-values h2 { font-size: 27px; }
+
+.about-values-grid > p {
+  color: #727d76;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-contact-link {
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.footer-contact-link:hover { text-decoration: underline; }
+
+@media (max-width: 680px) {
+  .home-highlight { min-height: 255px; }
+  .invitation-content,
+  .about-values-grid { align-items: flex-start; flex-direction: column; }
+  .about-values-grid { display: flex; gap: 20px; }
+  .invitation-content h2,
+  .about-values h2 { font-size: 24px; }
+  .about-content { padding-block: 52px 60px; }
+  .about-content h1 { font-size: clamp(36px, 10vw, 46px); }
+}
